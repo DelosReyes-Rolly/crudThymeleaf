@@ -1,6 +1,6 @@
-package com.crud.thymleaf.repository;
+package com.crud.thymeleaf.repository;
 
-import com.crud.thymleaf.model.User;
+import com.crud.thymeleaf.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

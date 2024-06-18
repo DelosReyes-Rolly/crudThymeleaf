@@ -1,11 +1,11 @@
-package com.crud.thymleaf;
+package com.crud.thymeleaf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ThymleafApplication {
+public class thymeleafApplication {
    public static void main(String[] args) {
-      SpringApplication.run(ThymleafApplication.class, args);
+      SpringApplication.run(thymeleafApplication.class, args);
    }
 }

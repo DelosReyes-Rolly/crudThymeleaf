@@ -1,6 +1,6 @@
-package com.crud.thymleaf.repository;
+package com.crud.thymeleaf.repository;
 
-import com.crud.thymleaf.model.Teacher;
+import com.crud.thymeleaf.model.Teacher;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TeacherRepository extends JpaRepository<Teacher, Long> {

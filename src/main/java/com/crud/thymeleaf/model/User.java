@@ -1,4 +1,4 @@
-package com.crud.thymleaf.model;
+package com.crud.thymeleaf.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,23 +10,24 @@ import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(
-   name = "Teacher"
+   name = "User"
 )
-public class Teacher {
+public class User {
    @Id
    @GeneratedValue(
       strategy = GenerationType.IDENTITY
    )
    private Long id;
    @Column(
-      name = "employee_number",
+      name = "student_number",
       nullable = false,
-      length = 15
+      length = 15,
+      unique = true
    )
    @NotBlank(
-      message = "Employee number is required!"
+      message = "Student number is required!"
    )
-   private String employee_number;
+   private String student_number;
    @Column(
       name = "first_name",
       nullable = false,
@@ -61,11 +62,11 @@ public class Teacher {
    )
    private String email;
 
-   public Teacher() {
+   public User() {
    }
 
-   public Teacher(@NotBlank(message = "Employee number is required!") String employee_number, @NotBlank(message = "First name is required!") String first_name, @NotBlank(message = "Last name is required!") String last_name, @NotBlank(message = "Email is required!") String email) {
-      this.employee_number = employee_number;
+   public User(@NotBlank(message = "Student number is required!") String student_number, @NotBlank(message = "First name is required!") String first_name, @NotBlank(message = "Last name is required!") String last_name, @NotBlank(message = "Email is required!") String email) {
+      this.student_number = student_number;
       this.first_name = first_name;
       this.last_name = last_name;
       this.email = email;
@@ -79,12 +80,12 @@ public class Teacher {
       this.id = id;
    }
 
-   public String getEmployee_number() {
-      return this.employee_number;
+   public String getStudent_number() {
+      return this.student_number;
    }
 
-   public void setEmployee_number(String employee_number) {
-      this.employee_number = employee_number;
+   public void setStudent_number(String student_number) {
+      this.student_number = student_number;
    }
 
    public String getFirst_name() {

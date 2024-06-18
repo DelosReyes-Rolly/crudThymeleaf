@@ -1,7 +1,7 @@
-package com.crud.thymleaf.controller;
+package com.crud.thymeleaf.controller;
 
-import com.crud.thymleaf.model.Teacher;
-import com.crud.thymleaf.repository.TeacherRepository;
+import com.crud.thymeleaf.model.Teacher;
+import com.crud.thymeleaf.repository.TeacherRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import java.util.List;
