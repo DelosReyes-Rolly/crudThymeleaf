@@ -12,7 +12,7 @@ Spring boot application with Thymeleaf that has CRUD (create, read, update and d
 <b>Steps:</b>
 1. Clone the project using git - git clone https://github.com/DelosReyes-Rolly/crudThymeleaf.git
 2. Open the mysql workbench and input your password.
-3. Create database named crudthymleaf and import the sql database located at the inside the folder.
+3. Create database named crudthymleaf and import the sql database located inside the folder.
 4. Open the project in visual studio code.
 5. Go to src/main/java/crud/thymeleaf/ThymleafApplication.java
 6. Click the run button on the upper right of the screen.
